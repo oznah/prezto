@@ -42,8 +42,10 @@ typeset -gU cdpath fpath mailpath path
 # )
 
 # Set the list of directories that Zsh searches for programs.
-eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(pyenv init --path)"
+if [[ "$OSTYPE" == darwin* ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  eval "$(pyenv init --path)"
+fi
 
 path=(
   /usr/local/{bin,sbin}
