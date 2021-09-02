@@ -27,10 +27,5 @@ unsetopt beep
 alias vim=nvim
 alias vi=nvim
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(pyenv init --path)"
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
