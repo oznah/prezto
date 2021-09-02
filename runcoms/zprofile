@@ -11,14 +11,15 @@
 
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
+  export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 fi
 
 #
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='nvim'
+export VISUAL='code'
 export PAGER='less'
 
 #
