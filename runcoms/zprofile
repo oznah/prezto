@@ -20,6 +20,7 @@ fi
 export EDITOR='nvim'
 export VISUAL='code'
 export PAGER='less'
+export DOTNET_ROOT=$HOME/.dotnet
 
 #
 # Language
@@ -51,6 +52,7 @@ path=(
   /usr/local/{bin,sbin}
   /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
   $HOME/bin
+  $HOME/.dotnet
   $path
 )
 
